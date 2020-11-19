@@ -6,4 +6,6 @@
     <dimen name="item_pokemon_margin_top">10dp</dimen>
     <dimen name="item_pokemon_margin_bottom">10dp</dimen>
     <dimen name="item_pokemon_txt_margin_start">8dp</dimen>
+    <dimen name="img_sad_pikachu_width">275dp</dimen>
+    <dimen name="img_sad_pikachu_height">200dp</dimen>
 </resources>

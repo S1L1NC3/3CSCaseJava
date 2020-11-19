@@ -4,16 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.main.MainFragment">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/message"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="MainFragment"
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        style="@style/constraintsStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewPokemons"
+            style="@style/constraintsStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/txtForFun"
+        android:layout_width="@dimen/img_sad_pikachu_width"
+        android:layout_height="@dimen/img_sad_pikachu_height"
+        app:layout_constraintBottom_toTopOf="@+id/imgGifForFun"
+        app:layout_constraintEnd_toEndOf="@+id/imgGifForFun"
+        app:layout_constraintStart_toStartOf="@+id/imgGifForFun"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/im_sorry"
+        android:textColor="@color/yellow"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:id="@+id/imgGifForFun"
+        android:layout_width="@dimen/img_sad_pikachu_width"
+        android:layout_height="@dimen/img_sad_pikachu_height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
