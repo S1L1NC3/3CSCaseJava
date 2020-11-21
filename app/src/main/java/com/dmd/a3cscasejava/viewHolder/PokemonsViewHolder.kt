@@ -19,16 +19,6 @@ class PokemonsViewHolder(inflater: LayoutInflater, parent: ViewGroup) :
 
     fun bind(pokemon: Pokemon) {
         mTitleView?.text = pokemon.name
-
-        itemView.setOnClickListener {
-            /*
-            val detailsIntent = Intent(itemView.context, DetailsActivity::class.java)
-            detailsIntent.putExtra(R.string.detailsExtrasKey.toString(),news)
-            itemView.context.startActivity(detailsIntent)
-
-             */
-
-        }
     }
 
 }

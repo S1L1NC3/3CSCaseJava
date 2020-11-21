@@ -1,14 +1,19 @@
 package com.dmd.a3cscasejava.viewModel
 
+import Pokemon
 import PokemonsResponse
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.observers.DisposableSingleObserver
 import io.reactivex.schedulers.Schedulers
 
-class PokemonViewModel() : MainViewModel(){
+open class PokemonViewModel() : MainViewModel(){
 
     override fun refreshData(){
         getDataFromApiForMovies()
+    }
+
+    fun assignDataManually(valueForManual : ArrayList<Pokemon>) {
+        data.value = valueForManual
     }
 
     private fun getDataFromApiForMovies(){
