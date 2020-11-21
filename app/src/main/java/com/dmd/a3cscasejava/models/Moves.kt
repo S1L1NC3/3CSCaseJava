@@ -1,3 +1,4 @@
+import com.dmd.a3cscasejava.models.Move
 import com.google.gson.annotations.SerializedName
 import java.io.Serializable
 

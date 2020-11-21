@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "839576979175",
+    "firebase_url": "https://cspokemon-c6c67.firebaseio.com",
+    "project_id": "cspokemon-c6c67",
+    "storage_bucket": "cspokemon-c6c67.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:839576979175:android:688aeaa8790728e138c442",
+        "android_client_info": {
+          "package_name": "com.dmd.a3cscasejava"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "839576979175-hnf46k9u8a4i6v6remiaq1sk4n8sjidv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_UECAmDAQDrf_qfHEeY-DJC5BI8jKcS0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "839576979175-hnf46k9u8a4i6v6remiaq1sk4n8sjidv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -21,8 +21,8 @@ class PokemonDetailViewModel: MainViewModel() {
                         .observeOn(AndroidSchedulers.mainThread())
                         .subscribeWith(object : DisposableSingleObserver<PokemonDetailResponse>(){
                             override fun onSuccess(t: PokemonDetailResponse) {
-                                data.value = t.stats // for trigger observable
                                 details = t
+                                data.value = t.stats // for trigger observable
                                 error.value=false
                                 loading.value=false
 

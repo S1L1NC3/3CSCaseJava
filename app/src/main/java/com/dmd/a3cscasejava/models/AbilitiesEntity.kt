@@ -9,7 +9,7 @@ data class AbilitiesEntity(
         var ability: AbilityEntity,
         @Expose
         @SerializedName("is_hidden")
-        var ısHidden: Boolean,
+        var isHidden: Boolean,
         @Expose
         @SerializedName("slot")
         var slot: Int)

@@ -1,5 +1,5 @@
 package com.dmd.a3cscasejava.models
-import Emerald
+
 import com.google.gson.annotations.SerializedName
 import java.io.Serializable
 

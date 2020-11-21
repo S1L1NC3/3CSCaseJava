@@ -1,10 +1,8 @@
 package com.dmd.a3cscasejava.viewHolder
 
 import Pokemon
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.dmd.a3cscasejava.R

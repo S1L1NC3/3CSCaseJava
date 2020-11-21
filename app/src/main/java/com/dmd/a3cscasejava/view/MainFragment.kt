@@ -108,9 +108,13 @@ class MainFragment : Fragment() {
     private fun observeLiveDataForPokemonDetail(){
         pokemonDetailViewModel.data.observe(this, Observer { data ->
             data?.let {
-                val detailsIntent = Intent(context, DetailActivity::class.java)
-                detailsIntent.putExtra(R.string.detailsExtrasKey.toString(), pokemonDetailViewModel.details)
-                startActivity(detailsIntent)
+                if (pokemonDetailViewModel.details != null){
+                    val detailsIntent = Intent(context, DetailActivity::class.java)
+                    //detailsIntent.putExtra(resources.getString(R.string.detailsExtrasKey), pokemonDetailViewModel.details)
+                    detailsIntent.putExtra("test", pokemonDetailViewModel.details) //Key will be assigned to const
+                    startActivity(detailsIntent)
+                }
+
             }
         })
         pokemonDetailViewModel.error.observe(this, Observer { error ->

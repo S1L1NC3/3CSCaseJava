@@ -1,11 +1,10 @@
 package com.dmd.a3cscasejava.models
-import Abilities
+
 import Moves
 import Species
 import Sprites
 import Stats
 import Types
-import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
 import java.io.Serializable
 
