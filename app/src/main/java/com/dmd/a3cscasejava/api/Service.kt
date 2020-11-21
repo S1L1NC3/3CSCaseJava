@@ -8,10 +8,10 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 
 class Service{
-    private val BASE_URL = "https://pokeapi.co/api/v2/"
+    private val connectionString = "https://pokeapi.co/api/v2/"
 
     private val api = Retrofit.Builder()
-        .baseUrl(BASE_URL)
+        .baseUrl(connectionString)
         .addConverterFactory(GsonConverterFactory.create())
         .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
         .build()

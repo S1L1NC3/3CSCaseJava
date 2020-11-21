@@ -6,7 +6,7 @@ import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.observers.DisposableSingleObserver
 import io.reactivex.schedulers.Schedulers
 
-open class PokemonViewModel() : MainViewModel(){
+open class PokemonViewModel : MainViewModel(){
 
     override fun refreshData(){
         getDataFromApiForMovies()

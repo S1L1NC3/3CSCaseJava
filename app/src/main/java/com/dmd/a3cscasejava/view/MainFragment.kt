@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.dmd.a3cscasejava.R
 import com.dmd.a3cscasejava.activities.DetailActivity
+import com.dmd.a3cscasejava.activities.MainActivity.Companion.EXTRAS_KEY
 import com.dmd.a3cscasejava.adapters.PokemonsAdapter
 import com.dmd.a3cscasejava.databinding.MainFragmentBinding
 import com.dmd.a3cscasejava.viewModel.PokemonDetailViewModel
@@ -110,8 +111,7 @@ class MainFragment : Fragment() {
             data?.let {
                 if (pokemonDetailViewModel.details != null){
                     val detailsIntent = Intent(context, DetailActivity::class.java)
-                    //detailsIntent.putExtra(resources.getString(R.string.detailsExtrasKey), pokemonDetailViewModel.details)
-                    detailsIntent.putExtra("test", pokemonDetailViewModel.details) //Key will be assigned to const
+                    detailsIntent.putExtra(EXTRAS_KEY, pokemonDetailViewModel.details) //Key will be assigned to const
                     startActivity(detailsIntent)
                 }
 

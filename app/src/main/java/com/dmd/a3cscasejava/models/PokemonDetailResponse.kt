@@ -13,7 +13,7 @@ data class PokemonDetailResponse (
 	@SerializedName("abilities") val abilities : List<Abilities>,
 	@SerializedName("base_experience") val base_experience : Int,
 	@SerializedName("forms") val forms : List<Forms>,
-	@SerializedName("game_indices") val game_indices : List<Game_indices>,
+	@SerializedName("game_indices") val game_indices : List<GameIndices>,
 	@SerializedName("height") val height : Int,
 	@SerializedName("held_items") val held_items : List<String>,
 	@SerializedName("id") val id : Int,

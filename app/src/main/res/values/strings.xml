@@ -2,7 +2,6 @@
     <string name="app_name">3CSCaseJava</string>
     <string name="content_dec">3 Sided Cube</string>
     <string name="im_sorry">I am sorry to not loading Pokemon\'s but \n It\'s Pikachu</string>
-    <string name="detailsExtrasKey">pikaExtrasKey</string>
     <string name="data">{data}</string>
     <string name="weight">Weight :</string>
     <string name="name">Name :</string>

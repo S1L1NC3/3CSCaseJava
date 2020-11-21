@@ -7,10 +7,13 @@ import com.dmd.a3cscasejava.databinding.ActivityMainBinding
 import com.dmd.a3cscasejava.view.MainFragment
 
 class MainActivity : AppCompatActivity() {
-    lateinit var binding: ActivityMainBinding
+    companion object {
+        var EXTRAS_KEY = "3SidedCubeExtrasKey"
+    }
+
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //setContentView(R.layout.main_activity) disabled cause of binding
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root

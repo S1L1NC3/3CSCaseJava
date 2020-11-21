@@ -1,9 +1,9 @@
 package com.dmd.a3cscasejava.activities
 
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
+import com.dmd.a3cscasejava.activities.MainActivity.Companion.EXTRAS_KEY
 import com.dmd.a3cscasejava.adapters.AbilitiesAdapter
 import com.dmd.a3cscasejava.databinding.ActivityDetailBinding
 import com.dmd.a3cscasejava.models.PokemonDetailResponse
@@ -23,9 +23,8 @@ class DetailActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
-        //pokemonDetails = intent.getSerializableExtra("resources.getString(R.string.detailsExtrasKey)") as PokemonDetailResponse
-        if (intent.getSerializableExtra("test") != null){
-            pokemonDetails = intent.getSerializableExtra("test") as PokemonDetailResponse //Key will be assigned to const
+        if (intent.getSerializableExtra(EXTRAS_KEY) != null){
+            pokemonDetails = intent.getSerializableExtra(EXTRAS_KEY) as PokemonDetailResponse //Key will be assigned to const
             fillViews(pokemonDetails)
         }
     }

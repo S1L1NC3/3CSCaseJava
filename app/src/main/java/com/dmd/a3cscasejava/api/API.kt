@@ -5,7 +5,6 @@ import com.dmd.a3cscasejava.models.PokemonDetailResponse
 import io.reactivex.Single
 import retrofit2.http.GET
 import retrofit2.http.Path
-import retrofit2.http.Url
 
 interface API {
     @GET("pokemon")
